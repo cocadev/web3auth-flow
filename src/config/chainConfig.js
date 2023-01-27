@@ -1,7 +1,7 @@
 import { CHAIN_NAMESPACES } from "@web3auth/base";
 
 export const CHAIN_CONFIG = {
-  mainnet: {
+  ethereum: {
     displayName: "Ethereum",
     chainNamespace: CHAIN_NAMESPACES.EIP155,
     chainId: "0x1",

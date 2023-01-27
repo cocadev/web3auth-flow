@@ -4,7 +4,7 @@ import { WEB3AUTH_NETWORK } from "../config/web3AuthNetwork";
 import styles from "../styles/Home.module.css";
 import { Web3AuthContext } from "../services/web3auth";
 
-const Setting = ( setNetwork, setChain) => {
+const Setting = ({setNetwork, setChain}) => {
   const networkChangeHandler = (e) => {
     console.log("Settings", e.target.value);
     setNetwork(e.target.value);

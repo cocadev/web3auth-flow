@@ -6,8 +6,8 @@ import Setting from "./components/Setting";
 import Main from "./components/Main";
 
 function App() {
-  const [web3AuthNetwork, setWeb3AuthNetwork] = useState("mainnet");
-  const [chain, setChain] = useState("mainnet");
+  const [web3AuthNetwork, setWeb3AuthNetwork] = useState("ethereum");
+  const [chain, setChain] = useState("ethereum");
 
   return (
     <div className={styles.container}>
