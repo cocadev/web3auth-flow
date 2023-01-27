@@ -1,17 +1,13 @@
 import { WALLET_ADAPTERS } from "@web3auth/base";
-import Web3 from "web3";
 import { useWeb3Auth } from "../services/web3auth";
 import styles from "../styles/Home.module.css";
 
 const Main = () => {
-  const { provider, login, logout, getChainId, getUserInfo, getAccounts, getBalance, signMessage, signTransaction, signAndSendTransaction, web3Auth, chain } = useWeb3Auth();
+  const { provider, login, logout, getUserInfo, getAccounts, getBalance, signMessage, signTransaction, signAndSendTransaction, web3Auth, chain } = useWeb3Auth();
 
   const loggedInView = (
     <>
       <button onClick={async()=>{
-        // const web3 = new Web3(window.ethereum);
-        // const chainning = await web3.eth.getChainId()
-        // console.log('chainning: ', chainning)
         console.log('chain: ', chain)
       }} className={styles.card}>
         Get Chain
